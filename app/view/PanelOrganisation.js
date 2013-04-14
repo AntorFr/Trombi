@@ -1,18 +1,15 @@
-var views = Ext.create("Trombi.store.List");
-console.log(views.getCount());
-if (views.getCount()>0) {
-    views.data.each(function(view) {
-        console.log(view.get('name'));
-    });
-}
+var views = Ext.create("Trombi.store.BLs");
+var views = Ext.create("Trombi.store.Membres");
 
 
 Ext.define('Trombi.view.PanelOrganisation', {
-	extend: 'Ext.Panel',
-	xtype: 'PanelOrganisation',
+	//extend: 'Ext.Panel',
+    extend: 'Ext.navigation.View',
+    xtype: 'PanelOrganisation',
+    id: 'PanelOrganisation',
 	requires: [
                 'Ext.dataview.List',
-                'Trombi.store.BLStore'
+                'Trombi.store.BLs'
                ],
 	config: {
 		iconCls : 'team',
@@ -21,16 +18,7 @@ Ext.define('Trombi.view.PanelOrganisation', {
         tabBarPosition: 'bottom',
         items:[
         {
-            docked: 'top',
-            xtype: 'titlebar',
-            title: 'Organigramme'
-        },
-        {
-            title : 'BT :',
-            xtype: 'list',
-            store: 'List',
-            height: '100%',
-            itemTpl: '<strong>{name}</strong>',
+            xtype: 'PanelBL'
         }
         ],
         

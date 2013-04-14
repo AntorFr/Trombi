@@ -28,9 +28,16 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Main',
+        'PanelOrganisation',
+        'PanelMyInfos',
+        'PanelRecherche'
     ],
 
+    store : ['BLs','Membres'],
+    models: ['BLs', 'Membres'],
+    controllers: ['Application'],
+                
     icon: {
         '57': 'resources/icons/Icon.png',
         '72': 'resources/icons/Icon~ipad.png',
@@ -49,7 +56,7 @@ Ext.application({
         '1496x2048': 'resources/startup/1496x2048.png'
     },
             
-    store : ['BLStore','List'],
+    
 
     launch: function() {
         // Destroy the #appLoadingIndicator element

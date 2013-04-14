@@ -1,0 +1,23 @@
+{"Membres":[
+{
+	"id":0,
+	"nom":"BERARD",
+    "prenom":"Sébastien",
+    "BL":0,
+    "grade":"Consultant Senior"
+},
+{
+	"id":1,
+    "nom":"BAETZ",
+    "prenom":"Baptiste",
+    "BL":0,
+    "grade":"Consultant"
+},
+{
+	"id":2,
+    "nom":"SOURICE ",
+    "prenom":"Julien",
+    "BL":1,
+    "grade":"Consultant Senior"
+}
+]}
