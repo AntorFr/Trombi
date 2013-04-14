@@ -1,3 +1,7 @@
+var views = Ext.create("Trombi.store.BLs");
+var views = Ext.create("Trombi.store.Membres");
+
+
 Ext.define('Trombi.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'mainview',
@@ -9,7 +13,9 @@ Ext.define('Trombi.view.Main', {
         'Trombi.view.PanelOrganisation',
         'Ext.dataview.List',
         'Trombi.view.PanelMembres',
-        'Trombi.view.PanelBL'
+        'Trombi.view.PanelBL',
+        'Trombi.view.EditMember',
+        'Trombi.view.viewMember'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -23,7 +29,8 @@ Ext.define('Trombi.view.Main', {
                 xtype: 'PanelRecherche'
             },
             {
-                xtype: 'PanelMyInfos'
+               xtype: 'PanelMyInfos'
+               //xtype: 'membre-edit'
             }
         ]
     }

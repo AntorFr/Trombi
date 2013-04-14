@@ -1,6 +1,3 @@
-var views = Ext.create("Trombi.store.BLs");
-var views = Ext.create("Trombi.store.Membres");
-
 
 Ext.define('Trombi.view.PanelOrganisation', {
 	//extend: 'Ext.Panel',

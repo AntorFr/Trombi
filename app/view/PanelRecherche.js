@@ -1,5 +1,5 @@
 Ext.define('Trombi.view.PanelRecherche', {
-	extend: 'Ext.Panel',
+	extend: 'Ext.navigation.View',
 	xtype: 'PanelRecherche',
 	requires: [
                 'Ext.field.Search',
@@ -9,15 +9,13 @@ Ext.define('Trombi.view.PanelRecherche', {
 		iconCls : 'search',
         title: 'Rechercher',
         tabBarPosition: 'bottom',
+        //ui: 'round',
+           
         items:[
-           {
-               docked: 'top',
-               xtype: 'titlebar',
-               title: 'Rechercher'
-            },
             {
                docked: 'top',
                xtype: 'toolbar',
+               title: 'Rechercher',
                items: [
                        {
                             xtype      : 'searchfield',
@@ -34,12 +32,25 @@ Ext.define('Trombi.view.PanelRecherche', {
                                  ]
                        }
                     ]
+               },{
+                xtype: 'list',
+                itemId:'rechercheMembre',
+                
+                grouped: true,
+                cls: 'x-contacts',
+                store: 'Membres',
+                itemTpl: [
+                '<div class="headshot" style="background-image:url(resources/images/headshots/{id}.jpeg);"></div>',
+                '{nom} {prenom}',
+                ].join(''),
+               emptyText: '<div style="margin-top: 20px; text-align: center">No Matching Items</div>',
+               
             }
         ],
            
         
            
-               
-                
+           
+           
 	}
 });
