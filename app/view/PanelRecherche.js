@@ -35,22 +35,33 @@ Ext.define('Trombi.view.PanelRecherche', {
                },{
                 xtype: 'list',
                 itemId:'rechercheMembre',
-                
                 grouped: true,
                 cls: 'x-contacts',
-                store: 'Membres',
+                store: 'Membres2',
                 itemTpl: [
                 '<div class="headshot" style="background-image:url(resources/images/headshots/{id}.jpeg);"></div>',
                 '{nom} {prenom}',
                 ].join(''),
                emptyText: '<div style="margin-top: 20px; text-align: center">No Matching Items</div>',
                
-            }
-        ],
-           
+            }/*,
+      
+         {
+                xtype: 'list',
+                itemId:'rechercheProjet',
+                grouped: true,
+                cls: 'x-contacts',
+                store: 'Projet',
+                itemTpl: [
+                '<div class="headshot" style="background-image:url(resources/images/headshots/{id}.jpeg);"></div>',
+                '{nom}',
+                ].join(''),
+               emptyText: '<div style="margin-top: 20px; text-align: center">No Matching Items</div>',
+               
+            }  */
         
            
-           
+        ],   
            
 	}
 });

@@ -7,7 +7,7 @@ Ext.define('Trombi.controller.Application', {
             panelMembres: 'PanelMembres',
             panelOrga : 'PanelOrganisation',
             panelRecherche : 'PanelRecherche',
-            listRecherche : 'PanelRecherche [itemId=rechercheMembre]',
+            listRecherche : 'PanelRecherche [itemId=rechercheMembre,rechecheProjet]',
             searchField : 'PanelRecherche [name=searchfield]'
         },
 
@@ -66,11 +66,11 @@ Ext.define('Trombi.controller.Application', {
     },
            
     onSearchKeyUp: function(field) {
-         
+         console.log(field.getValue());
         //get the store and the value of the field
         var value = field.getValue(),
-            store = Ext.getStore('Membres');
-
+            store = Ext.getStore('Membres2'||'projet');
+             //store = Ext.getStore('Projet');
 
         
         //first clear any current filters on thes tore
@@ -100,7 +100,7 @@ Ext.define('Trombi.controller.Application', {
                 //loop through each of the regular expressions
                 for (i = 0; i < regexps.length; i++) {
                     var search = regexps[i],
-                        didMatch = record.get('nom').match(search) || record.get('prenom').match(search);
+                        didMatch = record.get('nom').match(search) || record.get('prenom').match(search) || record.get('nom').match(search) ;
 
                     //if it matched the first or last name, push it into the matches array
                     matched.push(didMatch);
@@ -123,7 +123,7 @@ Ext.define('Trombi.controller.Application', {
      */
     onSearchClearIconTap: function() {
         //call the clearFilter method on the store instance
-        Ext.getStore('Membres').clearFilter();
+        Ext.getStore('Membres','Projet').clearFilter();
     }
 
 

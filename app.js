@@ -34,8 +34,8 @@ Ext.application({
         'PanelRecherche'
     ],
 
-    store : ['BLs','Membres'],
-    models: ['BLs', 'Membres'],
+    store : ['BLs','Membres','Membres2','Projet'],
+    models: ['BLs', 'Membres','Projet'],
     controllers: ['Application'],
                 
     icon: {

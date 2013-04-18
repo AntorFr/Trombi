@@ -5,20 +5,66 @@
     "prenom":"Sébastien",
     "BL":0,
     "grade":"Consultant Senior",
-    "phone":"06 07 32 27 82"
+    "phone":"06 07 32 27 82",
+	"mail":"sebastien.berard@cgi.com"
 },
 {
 	"id":1,
     "nom":"BAETZ",
     "prenom":"Baptiste",
     "BL":0,
-    "grade":"Consultant"
+    "grade":"Consultant",
+	"mail":"baptiste.baetz@cgi.com"
 },
 {
 	"id":2,
     "nom":"SOURICE ",
     "prenom":"Julien",
     "BL":1,
-    "grade":"Consultant Senior"
-}
+    "grade":"Consultant Senior",
+	"mail":"julien.sourice@cgi.com"
+},
+{
+	"id":3,
+	"nom":"aaa",
+    "prenom":"aa",
+    "BL":0,
+    "grade":"Consultant Senior",
+    "phone":"",
+	"mail":"aaa.aa@cgi.com"
+},
+{
+	"id":4,
+	"nom":"aaa",
+    "prenom":"pierre",
+    "BL":0,
+    "grade":"stagiaire",
+    "phone":"000",
+	"mail":"aaa.aa@cgi.com"
+},
+{
+	"id":5,
+	"nom":"abc",
+    "prenom":"sebastien",
+    "BL":0,
+    "grade":"manager",
+    "phone":"06 07 32 27 82",
+	"mail":"aaa.aa@cgi.com"
+},
+{
+	"id":6,
+    "nom":"test ",
+    "prenom":"Julien",
+    "BL":3,
+    "grade":"Consultant Senior",
+	"mail":"julien...@cgi.com"
+},
+{
+	"id":7,
+    "nom":"azerty ",
+    "prenom":"Julien",
+    "BL":0,
+    "grade":"associé",
+	"mail":"julien.so@cgi.com"
+},
 ]}
