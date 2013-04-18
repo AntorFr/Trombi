@@ -1,6 +1,6 @@
 Ext.define('Trombi.store.Projet', {
     extend: 'Ext.data.Store',
-    requires:['Trombi.model.Store'],
+    requires:['Trombi.model.Projet'],
     config: {
         model: 'Trombi.model.Projet',
         autoLoad: true,
@@ -15,9 +15,6 @@ Ext.define('Trombi.store.Projet', {
 		    direction: 'ASC'
 	    }
 	    ],
-        filters: [{
-            property: 'BL'
-        }],
 		grouper: {
 			groupFn: function(record) {
                var nom = record.get('nom')[0];
@@ -26,11 +23,11 @@ Ext.define('Trombi.store.Projet', {
 		},
 	    proxy: {
 		    type: 'ajax',
-		    url: './datas/Projet.json',
+		    url: './datas/projets.json',
 		
 		    reader: {
 			    type: 'json',
-			    rootProperty: 'Projet'
+			    rootProperty: 'projet'
 		    }
 	    }
     }

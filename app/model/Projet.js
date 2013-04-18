@@ -8,6 +8,6 @@ Ext.define('Trombi.model.Projet', {
         {name: 'status',  type: 'string'}         
         ],
         idProperty: 'id',
-        associations: { type: 'belongsTo', model: 'BLs', name: 'BL' }
+        //associations: { type: 'belongsTo', model: 'BLs', name: 'BL' }
     }
 });

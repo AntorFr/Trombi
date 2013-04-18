@@ -2,7 +2,7 @@
 {
 	"id":0,
 	"nom":"Projet1",
-    "Status":"en cours"
+    "status":"en cours"
 },{
 	"id":1,
     "nom":"Projet2",

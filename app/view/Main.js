@@ -1,7 +1,7 @@
 var views = Ext.create("Trombi.store.BLs");
 var views = Ext.create("Trombi.store.Membres");
 var views = Ext.create("Trombi.store.Membres2");
-//var views = Ext.create("Trombi.store.Projet");
+var views = Ext.create("Trombi.store.Projet");
 
 
 Ext.define('Trombi.view.Main', {
