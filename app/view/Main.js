@@ -1,5 +1,7 @@
 var views = Ext.create("Trombi.store.BLs");
 var views = Ext.create("Trombi.store.Membres");
+var views = Ext.create("Trombi.store.Membres2");
+var views = Ext.create("Trombi.store.Projet");
 
 
 Ext.define('Trombi.view.Main', {
@@ -13,6 +15,7 @@ Ext.define('Trombi.view.Main', {
         'Trombi.view.PanelOrganisation',
         'Ext.dataview.List',
         'Trombi.view.PanelMembres',
+		'Trombi.view.PanelProjet',
         'Trombi.view.PanelBL',
         'Trombi.view.EditMember',
         'Trombi.view.viewMember'

@@ -1,9 +1,10 @@
-Ext.define('Trombi.store.Membres', {
+Ext.define('Trombi.store.BLStore', {
+    id:'BLStore',
     requires: ['Trombi.model.BLs'],
     extend: 'Ext.data.Store',
     config: {
         model: 'Trombi.model.BLs',
-	    storeId: 'Membres',
+	    storeId: 'BLStore',
 	    sorters: [
 	    {
 		    property: 'name',
