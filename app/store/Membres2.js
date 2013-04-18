@@ -1,10 +1,10 @@
-Ext.define('Trombi.store.Membres', {
+Ext.define('Trombi.store.Membres2', {
     extend: 'Ext.data.Store',
     requires:['Trombi.model.Membres'],
     config: {
         model: 'Trombi.model.Membres',
         autoLoad: true,
-	    storeId: 'Membres',
+	    storeId: 'Membres2',
 	    sorters: [
 	    {
 		    property: 'nom',
@@ -15,14 +15,11 @@ Ext.define('Trombi.store.Membres', {
 		    direction: 'ASC'
 	    }
 	    ],
-        filters: [{
-            property: 'BL'
-        }],
+       
 		grouper: {
 			groupFn: function(record) {
-                var grade = record.get('grade');
-				
-				return '<div class="head' + grade + '">' + grade + '</div>';
+               var nom = record.get('nom')[0];
+				return nom.toUpperCase();
 			}
 		},
 	    proxy: {

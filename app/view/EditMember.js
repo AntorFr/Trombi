@@ -34,15 +34,10 @@ Ext.define('Trombi.view.EditMember', {
                                 xtype: 'textfield',
                                 label: 'Prénom',
                                 name: 'prenom'
-                            },
-                            {
-                                xtype: 'textfield',
-                                label: 'Coefficient',
-                                name: 'grade'
                             }
                         ]
                     },
-                    {
+                   /* {
                         xtype: 'fieldset',
                         defaults: {
                             labelWidth: '35%'
@@ -55,7 +50,7 @@ Ext.define('Trombi.view.EditMember', {
                                 name: 'telephone'
                             }
                         ]
-                    }
+                    }*/
                 ]
             }
         ],

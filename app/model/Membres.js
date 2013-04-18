@@ -8,7 +8,10 @@ Ext.define('Trombi.model.Membres', {
         {name: 'prenom',  type: 'string'},
         {name: 'BL',  type: 'int'},
         {name: 'grade',  type: 'string'},
-        {name: 'phone',  type: 'string'}         
+        {name: 'phone',  type: 'string'},
+        {name: 'mail',  type: 'string'},
+		{name: 'office',  type: 'string'}         
+		
         ],
         idProperty: 'id',
         associations: { type: 'belongsTo', model: 'BLs', name: 'BL' }
